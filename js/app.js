@@ -35,4 +35,14 @@ $.get('./data/page-1.json', data => {
     $('select').append(`<option>${i}</option>`);
   });
 });
+
+$('select').on('change', function (){
+  $('section').hide();
+  picArr.forEach(pic => {
+    if (this.value === pic.keyword) {
+      pic.render();
+    }
+  });
+});
+
 // name separate later
