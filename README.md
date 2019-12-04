@@ -8,6 +8,6 @@ Estimate of time needed to complete: 1.5hr
 
 Start time: 10am
 
-Finish time: _____
+Finish time: DNF
 
-Actual time needed to complete: _____
+Actual time needed to complete: Over 4hr
