@@ -8,6 +8,6 @@ Estimate of time needed to complete: 1.5hr
 
 Start time: 10am
 
-Finish time: DNF
+Finish time: Finished through feature 2 by 1:45pm
 
-Actual time needed to complete: Over 4hr
+Actual time needed to complete: Over 3.75hr
