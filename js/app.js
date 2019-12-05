@@ -36,10 +36,10 @@ $.get('./data/page-1.json', data => {
   });
 });
 
-$('select').on('change', function (){
+$('select').on('change', function() {
   $('section').hide();
   picArr.forEach(pic => {
-    if (this.value === pic.keyword) {
+    if (this.value === pic.keyword || this.value === 'default') {
       pic.render();
     }
   });
