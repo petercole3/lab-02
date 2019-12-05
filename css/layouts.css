@@ -1,0 +1,32 @@
+section {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  }
+
+img {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  }
+
+p {
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  overflow: scroll;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  max-width: 200px;
+  text-align: center;
+}
+
+#pic-template {
+  display: none;
+}
