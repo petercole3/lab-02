@@ -1,7 +1,9 @@
 'use strict';
 
-const picArr = [];
-const keywordArr = [];
+const picArr = []; // ARRAY OF ALL PICTURES
+const keywordArr = []; // ARRAY OF DISTINCT KEYWORDS
+
+// INITIAL PICTURE ARRAY CREATED FROM JSON INTO picArr
 
 function Pic(picObj) {
   this.title = picObj.title;
@@ -11,6 +13,8 @@ function Pic(picObj) {
   this.image_url = picObj.image_url;
   picArr.push(this);
 }
+
+// RENDER EACH PICTURE
 
 Pic.prototype.render = function () {
   const picTemplate = $('#pic-template').html();
@@ -24,6 +28,8 @@ Pic.prototype.render = function () {
   $('main').append($newSection);
 };
 
+// POPULATE DISTINCT KEYWORD ARRAY AND DROPDOWN MENU
+
 $.get('./data/page-1.json', data => {
   data.forEach(pic => {
     new Pic(pic).render();
@@ -35,6 +41,8 @@ $.get('./data/page-1.json', data => {
     $('select').append(`<option>${i}</option>`);
   });
 });
+
+// WHEN NEW KEYWORD FROM MENU SELECTED, HIDE ALL, THEN RENDER MATCHES
 
 $('select').on('change', function() {
   $('section').hide();
