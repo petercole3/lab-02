@@ -11,3 +11,5 @@ Start time: 10am
 Finish time: Finished through feature 2 by 1:45pm
 
 Actual time needed to complete: Over 3.75hr
+
+- 12-30-2019 7pm - Added comments for readability
